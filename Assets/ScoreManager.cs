@@ -1,4 +1,4 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,7 +8,7 @@ using TMPro;
 public class ScoreManager : MonoBehaviour
 {
     public int score = 0;
-    [SerializeField] public TextMeshPro scoreLabel;
+    [SerializeField] public TextMeshProUGUI scoreLabel;
     public void IncreaseScore()
     {
         score++;
@@ -22,6 +22,5 @@ public class ScoreManager : MonoBehaviour
     public void Start()
     {
         score = 0;
-        scoreLabel.text = score.ToString();
     }
 }
